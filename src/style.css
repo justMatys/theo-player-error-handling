@@ -1,0 +1,37 @@
+html,
+body,
+.player-wrapper,
+#player {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: black;
+}
+
+.player-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#play-button {
+  pointer-events: none;
+  position: absolute;
+  z-index: 400;
+}
+
+#errors {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  gap: 0.5rem;
+}
+
+.error {
+  padding: 0.25rem 0.5rem;
+  background: red;
+  color: white;
+}
